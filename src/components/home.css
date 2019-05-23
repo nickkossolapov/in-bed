@@ -1,0 +1,58 @@
+html { 
+  background: url(../assets//home.jpg) no-repeat center center fixed;
+  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+nav {
+  margin: auto;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: #808080;
+}
+
+a[href^="mailto"] {
+  color: white;
+}
+
+a[href^="mailto"] {
+  color: white;
+}
+
+a[href^="mailto"]:hover {
+  color: #808080;
+}
+
+.nav-background { 
+  background:  rgba(0, 0, 0, 0.85);
+}
+
+.nav-enter {
+  opacity: 0;
+}
+
+.nav-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+
+.nav-exit {
+  opacity: 1;
+}
+
+.nav-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
