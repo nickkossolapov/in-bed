@@ -1,10 +1,18 @@
+html {
+  background-color: black;
+}
+
 body, html, #root, .container {
   width: 100%;
   height: 100%;
   display: grid;
 }
 
-body {
+article {
+  margin: auto;
+}
+
+body, a, p, h1 {
   color: #8F8F8F;
   font-family: 'EB Garamond', serif;
   text-align: center;
@@ -13,8 +21,12 @@ body {
   user-select: none;
 }
 
-body:visited {
-  color: #474747;
+a:hover {
+  color: #474747
+}
+
+a:visited {
+  color: #8F8F8F;
 }
 
 ul {

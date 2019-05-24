@@ -1,4 +1,4 @@
-html { 
+.background { 
   background: url(../assets//home.jpg) no-repeat center center fixed;
   
   -webkit-background-size: cover;
@@ -11,27 +11,27 @@ nav {
   color: white;
 }
 
-a {
+nav a {
   color: white;
 }
 
-a:visited {
+nav a:visited {
   color: white;
 }
 
-a:hover {
+nav a:hover {
   color: #808080;
 }
 
-a[href^="mailto"] {
+nav a[href^="mailto"] {
   color: white;
 }
 
-a[href^="mailto"] {
+nav a[href^="mailto"] {
   color: white;
 }
 
-a[href^="mailto"]:hover {
+nav a[href^="mailto"]:hover {
   color: #808080;
 }
 

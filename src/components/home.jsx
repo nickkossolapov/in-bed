@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
+import { Link } from "react-router-dom";
 
 import './home.css';
 
@@ -8,17 +9,17 @@ export function Home() {
 
   return (
     <>
-      <div className="container" onClick={() => setShowNav(!showNav)}>
+      <main className="container background" onClick={() => setShowNav(!showNav)}>
         <CSSTransition in={showNav} timeout={200} classNames="nav" unmountOnExit>
           <section className="container nav-background">
             <nav>
               <h1>In bed</h1>
               <ul>
                 <li>
-                  <a href="/">about</a>
+                  <Link to="/about">about</Link>
                 </li>
                 <li>
-                  <a href="/">works</a>
+                  <Link to="/works">works</Link>
                 </li>
                 <li>
                   <a href="mailto:naoinbed@gmail.com">contact</a>
@@ -30,7 +31,7 @@ export function Home() {
             </nav>
           </section>
         </CSSTransition>
-      </div>
+      </main>
     </>
   )
 }
