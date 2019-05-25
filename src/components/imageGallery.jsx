@@ -38,7 +38,7 @@ function Images(props) {
 
         {
           images.map(image => {
-            return <img src={image} alt="" onClick={() => setLightboxImage(image)} key={image}/>
+            return <img src={process.env.PUBLIC_URL + image} alt="" onClick={() => setLightboxImage(image)} key={image}/>
           })
         }
       </section>
@@ -51,7 +51,7 @@ function Lightbox(props) {
   let { image, closeLightbox } = props;
   return (
     <section className="lightbox" onClick={closeLightbox}>
-      <img src={'/large' + image} alt="" onClick={closeLightbox}/>
+      <img src={process.env.PUBLIC_URL + '/large' + image} alt="" onClick={closeLightbox}/>
     </section>
   )
 }
