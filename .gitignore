@@ -25,5 +25,5 @@ chrome-user-data
 *.swo
 
 /scripts/originals
-/scripts/assets
+/scripts/public
 /scripts/venv
