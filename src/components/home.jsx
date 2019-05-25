@@ -13,19 +13,20 @@ export function Home() {
         <CSSTransition in={showNav} timeout={200} classNames="nav" unmountOnExit>
           <section className="container nav-background">
             <nav>
-              <h1>In bed</h1>
+              <h1 className="home-text">In bed</h1>
+              <p className="home-text">photographer</p>
               <ul>
                 <li>
-                  <Link to="/about">about</Link>
+                  <Link className="home-link" to="/about">about</Link>
                 </li>
                 <li>
-                  <Link to="/works">works</Link>
+                  <Link className="home-link" to="/works">works</Link>
                 </li>
                 <li>
-                  <a href="mailto:naoinbed@gmail.com">contact</a>
+                  <a className="home-link" href="mailto:naoinbed@gmail.com">contact</a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/in__bed/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                  <a className="home-link" href="https://www.instagram.com/in__bed/" target="_blank" rel="noopener noreferrer">Instagram</a>
                 </li>
               </ul>
             </nav>

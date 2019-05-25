@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import './imageGallery.css';
 
 export function imageGallery(name, albumLength, header) {
-  const images = [...(
-    [...Array(albumLength).keys()].map(number => `/${name}/${number}.jpg`)
-  )];
+  const indices = [...Array(albumLength).keys()];
 
   return () => {
     return (
@@ -16,7 +14,7 @@ export function imageGallery(name, albumLength, header) {
             <Link to="/works">{header}</Link>
           </h1>
         </header>
-        <Images images={images}/>
+        <Images indices={indices} name={name} albumLength={albumLength}/>
         <footer>
           <Link to="/works">back</Link>
         </footer>
@@ -26,32 +24,54 @@ export function imageGallery(name, albumLength, header) {
 }
 
 function Images(props) {
-  let [lightboxImage, setLightboxImage] = useState(null);
-  let {images} = props;
+  let [selectedImage, setSelectedImage] = useState(null);
+  let {indices, name, albumLength} = props;
 
   return (
     <>
-      {
-        lightboxImage && <Lightbox image={lightboxImage} closeLightbox={() => setLightboxImage(null)}/>
+      {selectedImage !== null &&
+        <Lightbox index={selectedImage}
+                  name={name}
+                  albumLength={albumLength}
+                  closeLightbox={() => setSelectedImage(null)}/>
       }
       <section className="masonry">
-
         {
-          images.map(image => {
-            return <img src={process.env.PUBLIC_URL + image} alt="" onClick={() => setLightboxImage(image)} key={image}/>
+          indices.map(index => {
+            return <img src={process.env.PUBLIC_URL + `/${name}/${index}.jpg`}
+                        alt=""
+                        onClick={() => setSelectedImage(index)}
+                        key={index}/>
           })
         }
       </section>
     </>
-
   );
 }
 
 function Lightbox(props) {
-  let { image, closeLightbox } = props;
+  let [lightboxImage, setLightboxImage] = useState(props.index);
+  let {albumLength, name, closeLightbox} = props;
+
+  useEffect(() => {
+    let handleKeyPress = event => setLightboxImage(getNewImage(event, lightboxImage, albumLength));
+    window.addEventListener('keydown', handleKeyPress);
+
+    return () => window.removeEventListener('keydown', handleKeyPress);
+  }, [albumLength, lightboxImage]);
+
   return (
     <section className="lightbox" onClick={closeLightbox}>
-      <img src={process.env.PUBLIC_URL + '/large' + image} alt="" onClick={closeLightbox}/>
+      <img src={process.env.PUBLIC_URL + `/large/${name}/${lightboxImage}.jpg`} alt="" onClick={closeLightbox}/>
     </section>
   )
+}
+
+function getNewImage(event, currentIndex, albumLength) {
+  const {key} = event;
+  if (key === 'ArrowLeft')
+    return (albumLength + currentIndex - 1)%(albumLength);
+  else if (key === 'ArrowRight')
+    return (currentIndex + 1)%(albumLength);
+  else return currentIndex;
 }

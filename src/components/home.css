@@ -10,31 +10,11 @@ nav {
   margin: auto;
 }
 
-nav h1 {
+.home-text, .home-link, .home-link:link, .home-link:active, .home-link:visited {
   color: white;
 }
 
-nav a {
-  color: white;
-}
-
-nav a:visited {
-  color: white;
-}
-
-nav a:hover {
-  color: #808080;
-}
-
-nav a[href^="mailto"] {
-  color: white;
-}
-
-nav a[href^="mailto"] {
-  color: white;
-}
-
-nav a[href^="mailto"]:hover {
+.home-link:hover {
   color: #808080;
 }
 

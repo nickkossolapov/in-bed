@@ -12,8 +12,7 @@ article {
   margin: auto;
 }
 
-body, a, p, h1 {
-  color: #8F8F8F;
+body {
   font-family: 'EB Garamond', serif;
   text-align: center;
   -moz-user-select: none;
@@ -21,7 +20,7 @@ body, a, p, h1 {
   user-select: none;
 }
 
-a:visited {
+a, a:link, a:active, a:visited, p, h1, h2 {
   color: #8F8F8F;
 }
 
@@ -30,7 +29,7 @@ a:hover {
 }
 
 ul {
-  all: unset; 
+  padding: 0;
   list-style: none;
 }
 
