@@ -16,17 +16,17 @@ body, a, p, h1 {
   color: #8F8F8F;
   font-family: 'EB Garamond', serif;
   text-align: center;
-  -moz-user-select: -moz-none;
+  -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
 }
 
-a:hover {
-  color: #474747
-}
-
 a:visited {
   color: #8F8F8F;
+}
+
+a:hover {
+  color: #474747
 }
 
 ul {
