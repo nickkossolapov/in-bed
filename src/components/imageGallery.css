@@ -65,7 +65,6 @@ footer {
   margin-top: 20px;
 }
 
-
 .lightbox {
   z-index: 1;
   position: fixed;
@@ -81,4 +80,5 @@ footer {
 .lightbox img {
   margin: auto;
   max-height: 90%;
+  max-width: 100%;
 }
