@@ -7,7 +7,7 @@ import about from '../assets/about.jpg';
 export function About() {
   return (
     <article>
-      <img src={about} alt="nao"/>
+      <img className="about" src={about} alt="nao"/>
       <h1>
         <Link to="/">
           Nao | in bed
