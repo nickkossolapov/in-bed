@@ -25,7 +25,7 @@ npm run
 ```
 
 ### Add Galleries
-Adding a gallery involved a couple of steps.
+Adding a gallery involves a couple of steps.
 
 1. Add the images to folder in `./scripts/originals/{folder_name}`.
 
