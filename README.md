@@ -2,7 +2,7 @@
 
 A remake of a site for a [friend](https://www.instagram.com/in__bed/). 
 
-To add a bit of functionality and a responsive design to an otherwise static desktop website, I remade it using React. This is that remake.
+To add a bit of functionality and a responsive design to an otherwise static desktop website, I remade it using exclusively React and vanilla CSS. This is that remake.
 
 
 ### Dependencies
@@ -27,7 +27,7 @@ npm run
 ### Add Galleries
 Adding a gallery involves a couple of steps.
 
-1. Add the images to folder in `./scripts/originals/{folder_name}`.
+1. Add the images to a folder in `./scripts/originals/{folder_name}`.
 
 2. Install the Python dependencies from inside the `scripts` directory.
 
@@ -54,7 +54,7 @@ python generate_images.py
 |Variable          | Description                                                                  |
 |------------------|------------------------------------------------------------------------------|
 |`url_path`        | The desired route, i.e. `https://nickkossolapov.github.io/in-bed/{url_path}`.|
-|`folder_name`     | The same as when generating the images.                                      |
+|`folder_name`     | The same above when adding the images to a folder.                            |
 |`page_title`      | The text that will appear above the gallery.                                 |
 |`number_of_images`| The total number of images in the gallery.                                   |
 
@@ -66,7 +66,7 @@ python generate_images.py
   <ul>
     ...
     <li>
-      <Link to="/{url_path}">page_title</Link>
+      <Link to="/{url_path}">{page_title}</Link>
     </li>
     <li className="back">
       <Link to="/">back </Link>

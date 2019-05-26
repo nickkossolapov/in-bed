@@ -4,35 +4,35 @@
   width: 300px;
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 660px) {
   .masonry {
     column-count: 2;
     width: 640px;
   }
 }
 
-@media only screen and (min-width: 980px) {
+@media only screen and (min-width: 1000px) {
   .masonry {
     column-count: 3;
     width: 980px;
   }
 }
 
-@media only screen and (min-width: 1320px) {
+@media only screen and (min-width: 1340px) {
   .masonry {
     column-count: 4;
     width: 1320px;
   }
 }
 
-@media only screen and (min-width: 1660px) {
+@media only screen and (min-width: 1680px) {
   .masonry {
     column-count: 5;
     width: 1660px;
   }
 }
 
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 2020px) {
   .masonry {
     column-count: 6;
     width: 2000px;
