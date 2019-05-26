@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/in-bed/static/css/main.d4b39ee5.chunk.css",
+    "main.css": "/in-bed/static/css/main.871272db.chunk.css",
     "main.js": "/in-bed/static/js/main.eff21161.chunk.js",
     "main.js.map": "/in-bed/static/js/main.eff21161.chunk.js.map",
     "runtime~main.js": "/in-bed/static/js/runtime~main.f87ed27c.js",
@@ -8,9 +8,9 @@
     "static/js/2.9259a5be.chunk.js": "/in-bed/static/js/2.9259a5be.chunk.js",
     "static/js/2.9259a5be.chunk.js.map": "/in-bed/static/js/2.9259a5be.chunk.js.map",
     "index.html": "/in-bed/index.html",
-    "precache-manifest.a4fb2e1746b21d38e80e6ac177bb8156.js": "/in-bed/precache-manifest.a4fb2e1746b21d38e80e6ac177bb8156.js",
+    "precache-manifest.68f9bce07f160b31710afd3cbb1f4aa0.js": "/in-bed/precache-manifest.68f9bce07f160b31710afd3cbb1f4aa0.js",
     "service-worker.js": "/in-bed/service-worker.js",
-    "static/css/main.d4b39ee5.chunk.css.map": "/in-bed/static/css/main.d4b39ee5.chunk.css.map",
+    "static/css/main.871272db.chunk.css.map": "/in-bed/static/css/main.871272db.chunk.css.map",
     "static/media/about.jpg": "/in-bed/static/media/about.1e5549a9.jpg",
     "static/media/home.css": "/in-bed/static/media/home.2c940f81.jpg"
   }
