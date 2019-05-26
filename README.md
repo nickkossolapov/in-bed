@@ -2,7 +2,7 @@
 
 A remake of a site for a [friend](https://www.instagram.com/in__bed/). 
 
-To add a bit of functionality to an otherwise static website, I remade it using React. This is that remake.
+To add a bit of functionality and a responsive design to an otherwise static desktop website, I remade it using React. This is that remake.
 
 
 ### Dependencies
