@@ -21,7 +21,7 @@ npm install
 Then start up the dev server.
 
 ```
-npm run
+npm start
 ```
 
 ### Add Galleries
@@ -54,7 +54,7 @@ python generate_images.py
 |Variable          | Description                                                                  |
 |------------------|------------------------------------------------------------------------------|
 |`url_path`        | The desired route, i.e. `https://nickkossolapov.github.io/in-bed/{url_path}`.|
-|`folder_name`     | The same above when adding the images to a folder.                            |
+|`folder_name`     | The same above when adding the images to a folder.                           |
 |`page_title`      | The text that will appear above the gallery.                                 |
 |`number_of_images`| The total number of images in the gallery.                                   |
 
