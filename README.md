@@ -79,7 +79,7 @@ To add images to a gallery, simply add them to the gallery folder in `./scripts/
 
 ### Deployment
 
-To deploy the website to [GitHub Pages](https://pages.github.com/), first fork the repo to your GitHub profile. Download the repo, and modify `homepage` in `package.json` with your own GitHub username: `"homepage": "http://{username}.github.io/in-bed",`.
+To deploy the website to [GitHub Pages](https://pages.github.com/), first fork the repo to your GitHub profile. Clone the repo, and modify `homepage` in `package.json` with your own GitHub username: `"homepage": "http://{username}.github.io/in-bed",`.
 
 Then just deploy the site.
 
